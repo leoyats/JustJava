@@ -19,12 +19,20 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the order button is clicked.
      */
+    public int numbersOfCoffees = 0;
     public void submitOrder(View view) {
-        int numbersOfCoffees = 2;
         display(numbersOfCoffees);
         displayPrice(numbersOfCoffees * 5);
     }
 
+    public void decrementClick(View view) {
+        numbersOfCoffees--;
+        display(numbersOfCoffees);
+    }
+    public void incrementClick(View view) {
+        numbersOfCoffees++;
+        display(numbersOfCoffees);
+    }
     /**
      * This method displays the given quantity value on the screen.
      */
