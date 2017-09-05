@@ -17,47 +17,51 @@
         android:textAllCaps="true"
         />
 
-    <Button
-        android:id="@+id/increment_button"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/textView"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:onClick="incrementClick"
-        android:text="+"/>
+        android:id="@+id/inc_and_decr_group">
 
-    <TextView
-        android:id="@+id/quantity_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/increment_button"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:text="2"
-        android:textColor="@android:color/background_dark"/>
 
-    <Button
-        android:id="@+id/decrement_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/quantity_text_view"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:onClick="decrementClick"
-        android:text="-"/>
+        <Button
+            android:id="@+id/decrement_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:onClick="decrementClick"
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@android:color/background_dark"/>
+
+        <Button
+            android:id="@+id/increment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:onClick="incrementClick"
+            android:text="+"/>
+
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/decrement_button"
+        android:layout_below="@id/inc_and_decr_group"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/leoyats/WORK/training/JustJava/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="42702c3a40d80ac89e0e6dd0ec9e323b35e57e20">
+        <dex dex="/home/leoyats/WORK/training/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ff21c265d7ff1d371ef892d9c77f4f5768c293ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/leoyats/WORK/training/JustJava/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/leoyats/WORK/training/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4dc6eb9bc1acb9492fd88ebf6a67258334b653b5/classes.dex" />
+    </item>
+
+</items>
